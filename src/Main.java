@@ -43,7 +43,8 @@ public class Main {
         System.out.println("git branch test");
         System.out.println("git branch --list");
 
-        // Switch to branch
+        // Switch to an existing branch or a new branch
         System.out.println("git checkout test");
+        System.out.println("git checkout -b test1");
     }
 }

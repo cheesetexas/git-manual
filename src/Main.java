@@ -18,9 +18,6 @@ public class Main {
         // Record changes to the repository
         System.out.println("git commit -m \"xxx\"");
 
-        // Reset current HEAD to the specified state
-        System.out.println("git reset head~ --soft");
-
         // Show the working tree status
         System.out.println("git status");
 
@@ -46,5 +43,24 @@ public class Main {
         // Switch to an existing branch or a new branch
         System.out.println("git checkout test");
         System.out.println("git checkout -b test1");
+        System.out.println("git checkout -b test1 origin/test1");
+        System.out.println("git checkout --track origin/test1");
+
+        // Join two or more development histories together
+        System.out.println("git merge test1");
+
+        // Update remote refs along with associated objects
+        System.out.println("git push -u origin master");
+        System.out.println("git push origin test1");
+
+        // Download objects and refs from another repository
+        System.out.println("git fetch");
+
+        // Store the uncommitted changes before switching to another branch
+        System.out.println("git stash");
+        System.out.println("git stash apply");
+
+        // Reset current HEAD to the specified state
+        System.out.println("git reset head~ --soft"); // --soft只回到暂存区，--hard直接回到上一次提交的状态（数据会丢失）
     }
 }

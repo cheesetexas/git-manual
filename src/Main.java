@@ -38,5 +38,12 @@ public class Main {
          * %s commit message*/
         System.out.println("git log --pretty=format:\"%h-%an, %ar|%ad:%s\"");
         System.out.println("git log --graph");
+
+        // List, create or delete branches
+        System.out.println("git branch test");
+        System.out.println("git branch --list");
+
+        // Switch to branch
+        System.out.println("git checkout test");
     }
 }
